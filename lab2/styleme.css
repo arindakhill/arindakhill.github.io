@@ -14,7 +14,7 @@ h2{
 }
 div{
     color: aliceblue;
-    font-size: 20px;
+    font-size: 18px;
 }
 q{
     font-style: italic;
@@ -27,14 +27,14 @@ span{
     color: beige;
 }
 #avengers{
-    color: aqua;
+    color: chocolate;
 
 }
 #inception{
-    color: aqua;
+    color: chocolate;
 }
-harryporter{
-    color: aqua;
+#harryporter{
+    color: chocolate;
 }
 img{
     height: 100px;
@@ -43,4 +43,15 @@ img{
 .images{
     height: auto;
     width: 500px;
+    border-radius: 15px;
+}
+#html-checker{
+   margin-right: 15px;
+    border-radius: 15px;
+}
+
+
+#moods img{
+    padding-right:5px;
+   
 }
