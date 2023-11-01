@@ -1,5 +1,46 @@
 body{
-    background: linear-gradient(120deg, #2b5876, #4e4376);
+    background: linear-gradient(120deg, black, gray);
     font-family: 'Arial', sans-serif;
     padding: 20px;
+}
+
+h1 {
+    font-size: 50px; /* Increase the font size */
+    color: #FF00FF; /* Set the text color to a neon pink */
+}
+h2{
+    font-size: 25px;
+    color: coral;
+}
+div{
+    color: aliceblue;
+    font-size: 25;
+}
+q{
+    font-style: italic;
+    font-weight: bold;
+    color: aquamarine;
+}
+span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: beige;
+}
+#avengers{
+    color: aqua;
+
+}
+#inception{
+    color: aqua;
+}
+harryporter{
+    color: aqua;
+}
+img{
+    height: 100px;
+    width: 200px;
+}
+.images{
+    height: auto;
+    width: 500px;
 }

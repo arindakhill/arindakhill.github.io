@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/lab1/ethan.jpeg"/>
     <title>Hillary's Home page</title>
+    <style>
+        #main{
+            text-align: center;
+        }
+        #list{
+            text-align: left;
+            display: inline-block;
+        }
+        #image{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <!-- Outer div to center all content -->
-    <div style="text-align: center;">
+    <div id=main>
         <img src="hillary.jpg" alt="Arinda Hillary" style="width: 30%;">
         <h1>Hillary Arinda</h1>
 
         <!-- Inner div to left-align list items -->
-        <div style="text-align: left; display: inline-block;">
+        <div id=list>
             <ul>
                 <li>Lab0: This Home page</li>
               <li><a href="#"> Lab1: About Me</a> </li>  
@@ -29,7 +41,7 @@
             </ul>
         </div>
         <!--Division for the validation image-->
-            <div style="text-align: center;">
+            <div id=image>
                 <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Farindakhill.github.io%2Flab1%2F">
          <img src="htmlchecker.png" alt="html-checker" style="width: 10%;">
          </a>
