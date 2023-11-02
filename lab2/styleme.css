@@ -80,9 +80,32 @@ a:hover{
     text-decoration: underline;
 }
 
-#about.p::first-letter{
+#about p::first-letter{
     float: left;
-    font-size: 250%;
+    font-size: 150%;
     line-height: 1;
     margin-right: 0.1em;
 }
+
+dt {
+    font-weight: bold;
+    color: #007BFF; /* This is a cool blue color. You can adjust to your preference. */
+    margin-top: 8px;
+}
+
+dd {
+    margin-left: 50px;
+}
+#movieList {
+    display: flex;
+    flex-direction: column-reverse;
+    list-style-type: decimal-reverse; /* not widely supported, but you can use it if the browser supports it */
+}
+#upside-down {
+    display: inline-block;  /* This makes sure the transform applies to the span as a whole unit */
+    transform: rotate(180deg);
+    unicode-bidi: bidi-override; /* This ensures the directionality of the text remains left-to-right after the transformation */
+    direction: rtl; /* This changes the direction of the text so it's still readable when flipped */
+}
+
+

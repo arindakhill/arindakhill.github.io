@@ -10,7 +10,7 @@
 <body>
     <h1>About Hillary Arinda</h1>
     <div id="about">
-        <p>My name is Hillary, a <span>meticulous thinker</span>, deeply immersed in the realms of computer science and web application programming.
+        <p><em id="upside-down">My name is Hillary</em>, a <span>meticulous thinker</span>, deeply immersed in the realms of computer science and web application programming.
             I am always keen on tackling challenges with a methodical and detailed approach. I am also a <span>proud father</span> of two sons and a 
             loving husband to the one beautiful wife, <span>Esther</span>.
         </p>
@@ -31,9 +31,34 @@
     <div id="mymovies">
         <h2>My Favorite Movies</h2>
         <p>( I like a blend of thrilling action, mind bending narratives, and magical adventures.. here is my favorites list!)</p>
-        <ol>
+        <ol id="movieList">
             <li>The superhero ensemble in <q>Avengers: Endgame </q> <a id="avengers" href="https://www.imdb.com/title/tt4154796/" >(IMDB)</a></li>
-            <li>The dream-altering intrigue of <q>Inception </q> <a id="inception" href="https://www.imdb.com/title/tt1375666/?ref_=ttpl_ov" >(IMDB)</a> </li>
+
+            <li>
+                The dream-altering intrigue of <q>Inception </q> 
+                <a id="inception" href="https://www.imdb.com/title/tt1375666/?ref_=ttpl_ov" >(IMDB)</a>
+                
+                <dl>
+                    <dt>Genre:</dt>
+                    <dd>Action, Adventure, Sci-Fi</dd>
+                    
+                    <dt>Director:</dt>
+                    <dd>Christopher Nolan</dd>
+                    
+                    <dt>Stars:</dt>
+                    <dd>Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page</dd>
+                    
+                    <dt>Release Date:</dt>
+                    <dd>16 July 2010</dd>
+                    
+                    <dt>Plot Outline:</dt>
+                    <dd>A skilled extractor is offered a chance to regain his old life as payment for a task considered to be impossible.</dd>
+                </dl>
+            </li>
+            
+            
+
+
             <li>The magical finale of <q>Harry Potter and the Deathly Hallows Part 2 </q> <a id="harryporter" href="https://www.imdb.com/title/tt1201607/?ref_=fn_al_tt_1" >(IMDB)</a> </li>
         </ol>
     </div>
@@ -65,8 +90,6 @@
         <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Farindakhill.github.io%2Flab2%2Fstyleme.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
             <img id= "css-checker" src ="css_checker.png" alt="CSS-checker"/>
         </a>
-        
-
     </footer>
 </body>
 </html>
