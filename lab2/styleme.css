@@ -16,13 +16,14 @@ body::before{
    right: 0;
    bottom: 0;
    left: 0;
-   z-index: -1;
+   z-index: -1;/* Ensure the background stays behind your content */
 
 }
 
 h1 {
     font-size: 50px; /* Increase the font size */
-    color: #FF00FF; /* Set the text color to a neon pink */
+    /*color: #FF00FF; /* Set the text color to a neon pink */
+    color: fuchsia;
 }
 h2{
     font-size: 25px;
@@ -42,23 +43,15 @@ span{
     font-weight: bold;
     color: beige;
 }
-#avengers{
-    color: chocolate;
 
-}
-#inception{
-    color: chocolate;
-}
-#harryporter{
-    color: chocolate;
-}
+
 img{
-    height: 100px;
-    width: 200px;
+    height: 50px;
+    width: 100px;
 }
 .images{
     height: auto;
-    width: 500px;
+    width: 300px;
     border-radius: 15px;
 }
 #html-checker{
@@ -70,4 +63,26 @@ img{
 #moods img{
     padding-right:5px;
    
+}
+
+
+a:link{
+    color:coral;
+    text-decoration: none;
+}
+
+a:visited{
+    color:greenyellow;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#about.p::first-letter{
+    float: left;
+    font-size: 250%;
+    line-height: 1;
+    margin-right: 0.1em;
 }
