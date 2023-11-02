@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    border:1px solid black;
+
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid black;
+}
+
+
+#rincol-logo {
+    width: 100px;
+    height: 50px;
+}
+
+#logout-button {
+    width: 30px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.cart-button {
+    width: 50px;
+    transition: border 0.3s;
+    border-radius: 50%;
+}
+
+.cart-button:hover {
+    border: 2px solid greenyellow;
+}
+
+input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+table th, table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.quantity-header, .quantity-cell {
+    width: 200px;  /* Adjust this value as needed */
+}
+
+.headings{
+    margin-left: 100px;
+}
+#welcome {
+    font-size: 24px;  /* Adjust this value to your preference */
+}
+
+#logout-button {
+    border-radius: 50%;  /* This will give it a circular shape */
+    transition: border 0.3s;  /* Transition effect for smoothness */
+}
+
+#logout-button:hover {
+    border: 2px solid red;  /* Border appears on hover */
+}
+
+.order-buttons {
+    text-align: right;
+    padding-right: 100px;
+}
+#order-now{
+    width: 100px;
+}
