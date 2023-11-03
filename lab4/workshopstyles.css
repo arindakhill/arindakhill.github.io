@@ -1,26 +1,158 @@
+/* Body */
 body{
     border: 1px solid black;
 }
-#heading{
-    font-size: 24px;
-    font-weight: bold;
-}
+
+
+/* heading(workshop registration) and more actions(drop down) */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content:left;
     align-items: center;
-    padding: 10px;
+    padding-left: 10px;
+   
     background-color: rgb(169, 213, 169);
     border-bottom: 1px solid black;
 }
-#register{
+  
+#heading{
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+
+}
+
+
+
+
+.select-container {                 /* drop down div*/
+    position: relative;
+    display: inline-block;
+}
+form header .select-container select {
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    padding-right: 20px; /* Make space for the custom arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form header .select-container::after {
+    content: '▼'; /* This is your custom dropdown arrow */
+    position: absolute;
+    right: 5px;
+    top: 60%;
+    transform: translateY(-50%);
+    pointer-events: none; /* This makes sure clicks on the arrow go through to the <select> element */
+    font-size: 8px;
+}
+
+
+
+
+/* Register and lunch*/
+
+body form .form-body #register p, body form .form-body #lunch p, body form .form-body #payment p {
     text-decoration: underline;
-    text-decoration: solid;
+    padding-left: 10px;
    
 }
+
+/*form*/
+
+/* Flexbox container for form columns */
+.form-body .form-columns {
+column-count: 2;
+column-gap: 20px;
+column-fill: auto;
+}
+
+.form-body .column {
+    display: inline-block;    /* Prevents the column breaks from happening inside your .column */
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 10px;     /* A little spacing between items */
+    page-break-inside: avoid; /* Avoids breaking inside the elements in print mode */
+    break-inside: avoid;      /* Avoids breaking inside the elements on screen */
+}
+
+
+
+
+
+
+  /* Remove any top margin from the first item in the column */
+.form-body .column:first-child {
+    margin-top: 0;
+}
+
+
+
+
+
+
+/*
+body form .form-body .column label span{
+    padding-right: 120px;
+}
+*/
+
+
 .required{
     color: red;
 }
+
+/*input width*/
+input[type="text"],input[type="email"],.column>select{
+    width: 200px;
+}
+
+
+/*Textarea*/
+textarea {
+    width: 200px;    /* Sets the width */
+    height: 100px;   /* Sets the height */
+}
+
+
+/* Adjusting the .column to use flex */
+body form .form-body .column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding-top: 10px;
+}
+
+/* Adjust the width of the labels so that all input fields start from the same position */
+body form .form-body .column label {
+    flex: 0 0 250px; /* This sets the label's width */
+    margin-right: 0px; /* Optional: some space between the label and the input */
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+
+
+/*colum 2*/
+
+  /* Break before column
+  .break {
+    break-before: column;
+}
+*/
+
+#lunch {
+    break-before: column; 
+    margin-top: -25px; 
+}
+
+
+
+
+/*Footer*/
 
 footer{
     display: flex;
@@ -37,9 +169,45 @@ footer input{
     size: 50px;
 }
 
+.form-button {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+
+    width: 100px;  /* or whatever width you want */
+    height: 30px;  /* or whatever height you want */
+    margin-right: 10px;
+    font-size: 14px;  /* Adjust font size if necessary */
+    border: none;
+    background-color:rgb(169, 213, 169);  
+    color: white;  /* Adjust the text color if necessary */
+    cursor: pointer;
+    transition: background-color 0.3s;  /* Optional: for a smooth color transition */
+}
+
+.form-button:hover {
+    background-color: #1879BD;  /* Optional: Adjust the hover background color */
+}
+
+
+.form-button {
+    border-radius: 5px;  
+}
+
+
+
+
+
+
+
+
+/*validators */
+
 body .checkers{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 body .checkers img {
@@ -47,3 +215,28 @@ body .checkers img {
     width:auto;
     border-radius: 15px;
 }
+
+
+/*checkbox styling*/
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-columns>p{
+    padding-left: 10px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.checkbox-group{
+    padding-left: 258px;
+    margin-top: -30px;
+    padding-bottom: 30px;
+
+}
+
+
+
+
+
+

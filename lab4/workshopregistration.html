@@ -13,7 +13,7 @@
         <header>
             <h1 id="heading">Workshop Registration</h1>
 
-            <div>
+            <div class="select-container">
                 <select>
                     <option>More Actions</option>
                 </select>
@@ -21,30 +21,149 @@
 
         </header>
 
-    <section>
-        <div id="register">Register now while seats are available!</div>
-        <label for="firstname">First Name <span class="required">*</span></label>
-        <input type="text" id="firstname" name="firstname" required>
+ <!-- Lets start the form content here-->       
+        <section class="form-body">
 
-            <label for="lastname">Username <span class="required">*</span></label>
-            <input type="text" id="lastname" name="lastname" required>
-                   
-    </section>
+            <div id="register"><p>Register now while seats are available!</p></div>
 
-<footer>
-    <input type="submit" name="Submit" id="submit"/>
-    <input type="reset" name="Reset" id="reset"/>
-</footer>
+        <!-- start of form columns container -->
+            <div class="form-columns"> 
+
+                <div class="column">
+                    <label for="firstname">First Name <span class="required">*</span></label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>    
+               
+    
+    
+                <div class="column">
+                    <label for="lastname">Last Name <span class="required">*</span></label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+    
+    
+                <div class="column">
+                    <label for="company">Company/Institution <span class="required">*</span></label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+    
+                <div class="column">
+                    <label for="address">Address <span class="required">*</span></label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+    
+    
+                <div class="column">
+                    <label for="city">City </label>
+                    <input type="text" id="city" name="city" >
+                </div>
+    
+    
+    
+    
+                <div class="column">
+                    <label for="select-state">State /Province /Region</label>
+                        <select id="select-state">
+                            <option>-Select-</option>
+                            <option>Iowa</option>
+                        </select> 
+                </div>
+    
+    
+    
+                <div class="column">
+                    <label for="select-country">Country</label>
+                        <select id="select-country">
+                            <option>-Select-</option>
+                            <option>USA</option>
+                        </select> 
+                </div>
+    
+    
+                <div class="column">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required/>
+                </div>
+    
+                <div class="column">
+                    <label for="email">Phone Number <span class="required">*</span></label>
+                    <input type="text" id="phone" name="phone" required/>
+                </div>
+    
+    
+    <!--   column 2 starts here  -->
+                
+                <div class="break"></div> <!-- column break-->
+                <div id="lunch"><p>Lunch</p></div>
+
+                <div class="column">
+                    <label for="meals">Meal Preference</label>
+                        <select id="meals">
+                            <option>Vegetarian</option>
+                            <option>Vegan</option>
+                            <option>Meat Only</option>
+                        </select> 
+                </div>
+
+                <div id="payment"><p>Payment Details</p></div>
+
+                <p>Payment Mode</p>
+                <div class="checkbox-group">
+                    
+                    <label>
+                        <input type="checkbox" name="paymentMode" value="Cash">
+                        Cash
+                    </label>
+                    <label>
+                        <input type="checkbox" name="paymentMode" value="Cheque">
+                        Cheque
+                    </label>
+                    <label>
+                        <input type="checkbox" name="paymentMode" value="Demand Draft">
+                        Demand Draft
+                    </label>
+                </div>
+                
+
+                <div class="column">
+                    <label for="cheque">DD/Cheque No.</label>
+                    <input type="text" id="cheque" name="cheque">
+                </div> 
+            
+                <div class="column">
+                    <label for="bank">Drawn On (Bank Name)</label>
+                    <input type="text" id="bank" name="bank">
+                </div> 
+
+
+                <div class="column">
+                    <label for="payable">Payable at</label>
+                    <input type="text" id="payable" name="payable">
+                </div> 
+
+
+
+
+
+            
+                </div>   
+        </section>
+
+        <footer>
+            <input type="submit" value="Submit" class="form-button">
+            <input type="reset" value="Reset" class="form-button">
+
+         </footer>
 
     </form>
     
     <div class="checkers">
 
-        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Farindakhill.github.io%2Flab2%2Faboutme.html" target="_blank">
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Farindakhill.github.io%2Flab4%2Fworkshopregistration.html" target="_blank">
             <img id= "html-checker" src="/images/HTML-checker.png" alt="HTML-checker"/>
         </a>
        
-        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Farindakhill.github.io%2Flab2%2Fstyleme.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Farindakhill.github.io%2Flab4%2Fworkshopstyles.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
             <img id= "css-checker" src ="/images/css_checker.png" alt="CSS-checker"/>
         </a>
 
