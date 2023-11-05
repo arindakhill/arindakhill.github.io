@@ -22,6 +22,9 @@ return sum;
 //test 1
 let array = [1,2,3,4,5,50,50,70];
 console.log(sum(array));
+/************************************************************************************************/
+
+
 
 
 //Solution 2
@@ -32,10 +35,13 @@ const getNewArray = function(array){
 //test 2
 let stringArray = ['arinda','hillary', 'eth']
 console.log(getNewArray(stringArray));
+/************************************************************************************************/
 
 
 
-//Question 3
+
+
+//Solution 3
 
 const conc = (string, ...arrays) => {
     let result = string.split('');
@@ -54,4 +60,4 @@ const conc = (string, ...arrays) => {
   // test 3:
   console.log(conc('hi', [1,2,3], ['Hello','world'])); 
   // Expected output: ['h', 'i', 1, 2, 3, 'Hello', 'world']
-  
+/************************************************************************************************/  
