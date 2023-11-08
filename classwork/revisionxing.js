@@ -10,11 +10,12 @@ const students = [
 let sum = students
 .filter(stu => stu.courses.includes('cs303'))
 .map(stu => stu.grade)
-.reduce((sum, current, index, array) => sum + current / array.length, 0);
+.reduce((sum, current,index, array) => sum + current / array.length, 0);
 console.log(sum)
  
 /*
 let len = 0;
+
  
 let result2 = students.filter(stu => stu.courses.includes('cs303'))
  
