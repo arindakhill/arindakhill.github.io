@@ -1,0 +1,7 @@
+.images{
+    width: auto;
+    height: 800px;
+}
+body{
+    display: grid;
+}
