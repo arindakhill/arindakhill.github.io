@@ -2,6 +2,16 @@
     width: auto;
     height: 800px;
 }
+
 body{
     display: grid;
+  
+    column-count: 2;
+    column-gap: 20px;
+    column-fill:auto;
+    }
+
+.q3 {
+    break-before: column; 
+    margin-top: -25px; 
 }
