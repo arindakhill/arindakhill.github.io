@@ -2,10 +2,6 @@
 //What is console.log going to show? => 100000000
 
 
-
-
-//
-
 let i = 0;
 
 setTimeout(() => console.log(i), 100); // ?

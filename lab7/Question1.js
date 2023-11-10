@@ -78,7 +78,7 @@ let group = {
 group.showList();
 */
 
-/*
+
 //solution 3--- using bind
 //'use strict'
 
@@ -101,21 +101,21 @@ let group = {
 };
 
 group.showList();
-*/
 
-// 4. call + wrapper
-// let group = {
-//     title: "Our Group",
-//     students: ["John", "Pete", "Alice"],
-//     showList: function () {
-//         this.students.forEach((stu) => {
-//             (function (student) {
-//                 console.log(this.title + ": " + student);
-//             }).call(this, stu);
-//         });
-//     }
-// };
-// group.showList();
+
+//4. call + wrapper
+let group = {
+    title: "Our Group",
+    students: ["John", "Pete", "Alice"],
+    showList: function () {
+        this.students.forEach((stu) => {
+            (function (student) {
+                console.log(this.title + ": " + student);
+            }).call(this, stu);
+        });
+    }
+};
+group.showList();
 
 // 5. apply + wrapper
 let group = {
