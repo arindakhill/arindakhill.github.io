@@ -1,0 +1,13 @@
+Behavior in Node.js: => undefined
+
+In Node.js, each file is treated as a separate module.
+Top-level variables, like message in this case, are local to their module and not part of the global scope.
+The this keyword in a function called in the top-level scope refers to module.exports, which does not include the message variable.
+Therefore, logMessage() in Node.js outputs undefined, as this.message does not refer to our message variable.
+
+
+Behavior in a Browser:=> Hello World
+
+In a browser, top-level variables are part of the global scope, which is the window object.
+The this keyword in a non-method function called in the global scope refers to the window object.
+Therefore, logMessage() in a browser outputs 'Hello World', as this.message refers to the global message variable.

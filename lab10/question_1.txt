@@ -1,0 +1,43 @@
+Question 1
+How many callbacks queues in Node.js and what are they? Give examples to explain how different callbacks are enqueued in different queues
+Answer - about 8 queues
+1- The event loop is divided into several phases, each with its own queue:
+
+-Timers Queue: This queue handles callbacks scheduled by setTimeout() and setInterval().
+-I/O Callbacks Queue: This queue handles most of the callbacks, like network operations, file operations, etc.
+-Idle, Prepare Queue: Used internally by Node.
+-Poll Queue: This queue retrieves new I/O events; Node.js will execute callbacks in this phase.
+-Check Queue: setImmediate() callbacks are processed here.
+-Close Callbacks Queue: Here, callbacks like socket.on('close', ...) are executed.
+
+2- Next Tick Queue:
+This is used by process.nextTick(). It isn't technically part of the event loop. Instead, it allows the user to schedule callbacks after the current operation completes but before the event loop continues.
+
+3- Other Microtasks Queue:
+This includes promises. Microtasks process immediately after the currently executing script has completed and before the event loop continues.
+
+examples
+1. timer Queue example
+setTimeout(() => {
+   console.log('Executed after 1000 ms');
+}, 1000);
+
+2. I/O callbacks queue example
+const fs = require('fs');
+
+fs.readFile('/path/to/file', (err, data) => {
+   if (err) throw err;
+   console.log('File read completed');
+});
+
+3. Check queue example
+setImmediate(() => {
+   console.log('Executed in the next iteration of the event loop');
+});
+
+4.Next Tick queue example
+process.nextTick(() => {
+   console.log('Executed on the next tick');
+});
+
+5.

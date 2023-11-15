@@ -82,40 +82,40 @@ group.showList();
 //solution 3--- using bind
 //'use strict'
 
-let group = {
+// let group = {
 
-    title: "Our Group",
+//     title: "Our Group",
 
-    students: ["John", "Pete", "Alice"],
-    showList : function () {
+//     students: ["John", "Pete", "Alice"],
+//     showList : function () {
 
        
-        this.students.forEach( function(student) {
+//         this.students.forEach( function(student) {
     
-            console.log(this.title + ": " + student);
+//             console.log(this.title + ": " + student);
     
-        }.bind(this));
+//         }.bind(this));
     
-    }
+//     }
     
-};
+// };
 
-group.showList();
+// group.showList();
 
 
 //4. call + wrapper
-let group = {
-    title: "Our Group",
-    students: ["John", "Pete", "Alice"],
-    showList: function () {
-        this.students.forEach((stu) => {
-            (function (student) {
-                console.log(this.title + ": " + student);
-            }).call(this, stu);
-        });
-    }
-};
-group.showList();
+// let group = {
+//     title: "Our Group",
+//     students: ["John", "Pete", "Alice"],
+//     showList: function () {
+//         this.students.forEach((stu) => {
+//             (function (student) {
+//                 console.log(this.title + ": " + student);
+//             }).call(this, stu);
+//         });
+//     }
+// };
+// group.showList();
 
 // 5. apply + wrapper
 let group = {

@@ -1,0 +1,2 @@
+The code in `app.js` will result in a "TypeError: getName is not a function" error because `getName` is imported as an object, not a function. 
+To fix it, either use `getName.getName()` or adjust the import to directly extract the `getName` function.
