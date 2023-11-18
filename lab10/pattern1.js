@@ -24,11 +24,6 @@
 //     console.log('Josh Edward');
 
 // }
-module.exports.getFullname = function (){
-
-    console.log('Josh Edward');
-
-}
 
 exports.getFirstname = function () {
 
@@ -46,5 +41,8 @@ exports = {
 
 }
 
+module.exports.getFullname = function (){
 
-//console.log(module.exports)
+    console.log('Josh Edward');
+
+}

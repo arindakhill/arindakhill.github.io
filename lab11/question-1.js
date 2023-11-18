@@ -17,3 +17,4 @@ dns.resolve4(domain, (err, addresses) => {
     }
     console.log(`IP Address for ${domain}: ${addresses[0]}`);
 });
+

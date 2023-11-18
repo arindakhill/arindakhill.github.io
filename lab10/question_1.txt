@@ -40,4 +40,40 @@ process.nextTick(() => {
    console.log('Executed on the next tick');
 });
 
-5.
+5.Microtasks queue example
+Promise.resolve().then(() => console.log('Promise resolved'));
+
+6. Poll queue example
+const fs = require('fs');
+
+// Asynchronous file read (non-blocking I/O)
+fs.readFile('/path/to/file', (err, data) => {
+    if (err) throw err;
+    console.log('File read complete');
+});
+
+console.log('This will execute while file is being read');
+
+7. Close callback queue example
+const net = require('net');
+
+const server = net.createServer((socket) => {
+    socket.end('Goodbye\n');
+});
+
+server.on('connection', (socket) => {
+    console.log('A new connection was made');
+});
+
+server.on('close', () => {
+    console.log('Server is closed');
+});
+
+server.listen(8080, () => {
+    console.log('Server is running');
+});
+
+// After some operations or conditions
+setTimeout(() => {
+    server.close(); // This will trigger the 'close' event
+}, 10000);
