@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const path = require('path')
 
 // GET request for /products
 router.get('/', (req, res) => {
-  res.sendFile(__dirname + '/../views/products.html');
+    res.sendFile(path.join(__dirname, '..', 'views', 'products.html'));
 });
 
 // POST request for /products
