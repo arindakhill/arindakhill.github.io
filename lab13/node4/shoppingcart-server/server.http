@@ -1,0 +1,29 @@
+GET http://127.0.0.1:3000/books
+
+###
+GET http://127.0.0.1:3000/books/2
+
+###
+POST http://127.0.0.1:3000/books
+Content-Type: application/json
+
+{
+    "title":"FPP.js",
+    "ISBN":123546,
+    "publishedDate":5000,
+    "author":"John Grisham"
+}
+
+###
+PUT http://127.0.0.1:3000/books/1
+Content-Type: application/json
+
+{
+    "title":"HarryPotter",
+    "ISBN":12244546,
+    "publishedDate":5000,
+    "author":"John Grisham"
+}
+
+###
+DELETE http://127.0.0.1:3000/books/1

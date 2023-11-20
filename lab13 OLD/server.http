@@ -1,0 +1,27 @@
+GET http://127.0.0.1:3000/products
+
+###
+GET http://127.0.0.1:3000/products/2
+
+###
+POST http://127.0.0.1:3000/products
+Content-Type: application/json
+
+{
+    "title":"FPP.js",
+    "description":"VERY nice",
+    "price":5000
+}
+
+###
+PUT http://127.0.0.1:3000/products/1
+Content-Type: application/json
+
+{
+    "title":"WAP3.js",
+    "description":"Very Nice",
+    "price":4000
+}
+
+###
+DELETE http://127.0.0.1:3000/products/1
