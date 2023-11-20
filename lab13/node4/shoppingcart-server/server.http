@@ -10,7 +10,7 @@ Content-Type: application/json
 {
     "title":"FPP.js",
     "ISBN":123546,
-    "publishedDate":5000,
+    "publishedDate":"2023-12-08",
     "author":"John Grisham"
 }
 
@@ -19,10 +19,10 @@ PUT http://127.0.0.1:3000/books/1
 Content-Type: application/json
 
 {
-    "title":"HarryPotter",
+    "title":"Testing update",
     "ISBN":12244546,
-    "publishedDate":5000,
-    "author":"John Grisham"
+    "publishedDate":"2023-11-20",
+    "author":"Hillary Arinda"
 }
 
 ###

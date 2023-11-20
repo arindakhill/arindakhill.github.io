@@ -1,4 +1,29 @@
-let books = [];
+let books = [
+    {   "id":"1",
+        "title":"the Street Lawyer",
+        "ISBN":12244546,
+        "publishedDate":"2023-12-24",
+        "author":"John Grisham"
+    },
+    {
+        "id":"2",   
+        "title":"HarryPotter",
+        "ISBN":123546,
+        "publishedDate":"2010-12-30",
+        "author":"Boo ya"
+    },
+    {
+        "id":"3",
+        "title":"Far from HOme",
+        "ISBN":447568,
+        "publishedDate":"2020-11-11",
+        "author":"Christopher Nolan"
+    }
+
+
+
+
+];
 
 module.exports = class Book {
 
@@ -12,12 +37,13 @@ module.exports = class Book {
 
     save() {
         this.id = Math.random().toString();
-        products.push(this);
+        books.push(this);
+        console.log(this);
         return this;
     }
 
     update() {
-        const index = books.findIndex(p => p.id === this.id);
+        const index = books.findIndex(p => p.id == this.id);
         if (index > -1) {
             books.splice(index, 1, this);
             return this;
